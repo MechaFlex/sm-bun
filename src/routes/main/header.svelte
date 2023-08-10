@@ -1,0 +1,21 @@
+<script>
+  import Icon from "$lib/icon.svelte"
+  import { navIsOpen } from "$lib/stores/navStore"
+
+  function toggleNav() {
+    $navIsOpen = !$navIsOpen
+  }
+</script>
+
+<header class="flex items-center justify-between bg-sky-800 text-slate-50">
+  <logo class="px-3 py-1 font-logo text-[38px]">SM</logo>
+  <button
+    type="button"
+    class="flex h-full items-center gap-2 rounded-none text-[18px] font-light drop-shadow-none"
+    on:click={toggleNav}
+    on:keypress={toggleNav}
+  >
+    Agenda
+    <Icon path="M3.75 9h16.5m-16.5 6.75h16.5" />
+  </button>
+</header>

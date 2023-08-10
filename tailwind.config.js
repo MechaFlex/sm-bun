@@ -2,6 +2,21 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+    fontSize: {
+      heading: ['28px', {
+        fontWeight: '700',
+      }],
+      subheading: ['20px', {
+        fontWeight: '700',
+      }],
+      body: ['15px', {
+        fontWeight: '500',
+      }],
+    },
+    fontFamily: {
+      main: ['Bitter', 'serif'],
+      logo: ['Delta'],
+    },
     extend: {},
   },
   plugins: [],
