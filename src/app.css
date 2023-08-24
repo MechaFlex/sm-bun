@@ -13,7 +13,6 @@
 }
 
 /* Defaults */
-
 @layer base {
   body {
     @apply bg-slate-50 font-main text-slate-800;

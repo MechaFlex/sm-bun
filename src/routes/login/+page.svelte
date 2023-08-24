@@ -1,5 +1,5 @@
 <script>
-  import Icon from "$lib/icon.svelte"
+  import Icon from "$lib/components/icon.svelte"
   import dayjs from "dayjs"
   import "dayjs/locale/sv"
   import advancedFormat from "dayjs/plugin/advancedFormat"

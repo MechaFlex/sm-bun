@@ -1,9 +1,10 @@
 <script>
-  import Icon from "$lib/icon.svelte"
-  import { navIsOpen } from "$lib/stores/navStore"
+  import Icon from "$lib/components/icon.svelte"
+  import { navIsOpen, navSelection } from "$lib/stores/navStore"
 
   function toggleNav() {
     $navIsOpen = !$navIsOpen
+    //Possbile animation
   }
 </script>
 
@@ -15,7 +16,7 @@
     on:click={toggleNav}
     on:keypress={toggleNav}
   >
-    Agenda
+    {$navSelection}
     <Icon path="M3.75 9h16.5m-16.5 6.75h16.5" />
   </button>
 </header>

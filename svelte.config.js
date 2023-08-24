@@ -1,5 +1,5 @@
-import adapter from "@bun-community/sveltekit-adapter-bun";
-import preprocess from "svelte-preprocess";
+import adapter from "@sveltejs/adapter-auto"
+import preprocess from "svelte-preprocess"
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,10 +8,8 @@ const config = {
   preprocess: preprocess(),
 
   kit: {
-    adapter: adapter({
-      dynamic_origin: true,
-    }),
+    adapter: adapter(),
   },
-};
+}
 
-export default config;
+export default config

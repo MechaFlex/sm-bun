@@ -5,3 +5,8 @@
   <div class="bg-green-500 p-6">första</div>
   <div class="bg-blue-600 p-8">andra</div>
 </div>
+
+<form method="POST">
+  <input type="text" name="nick" />
+  <button type="submit">Submit!</button>
+</form>
